@@ -1,0 +1,15 @@
+{
+  "name": "node-crud-app-with-json-file-backend",
+  "version": "1.0.0",
+  "description": "A tutorial project on how to create CRUD operations with JSON files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Vishnu Sivan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
