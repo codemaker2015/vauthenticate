@@ -16,6 +16,29 @@ const getAccountData = () => {
   return JSON.parse(jsonData)
 }
 
+accountRoutes.get('/', (req, res) => {
+  
+  res.send(`<h2>Welcome to VAuthenticate</h2>
+            VAuthenticate server is running. <br/><br/> 
+            <b>Use the following endpoints: </b><br/>
+            <ul> 
+              <li> [GET] <a href='/account/list'>/account/list </a>  - for getting account list </li>
+            </ul>
+            <ul> 
+              <li> [POST] <a href='/account/validate'>/account/validate </a>  - for validating the user account with username and password </li>
+            </ul>
+            <ul> 
+              <li> [POST] <a href='/account/addaccount'>/account/addaccount </a>  - for adding new account </li>
+            </ul>
+            <ul> 
+              <li> [PUT] <a href='/account/:id'>/account/:id </a>  - for updating the account</li>
+            </ul>
+            <ul> 
+              <li> [DELETE] <a href='/account/delete/:id'>/account/delete/:id </a>  - for deleting the account </li>
+            </ul>
+            
+              `);
+});
 
 // reading the data
 accountRoutes.get('/account', (req, res) => {
